@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Analysis Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Analysis Tool</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        {% if colors %}
+        <div class="colors">
+            <h2>Extracted Colors:</h2>
+            <div class="color-container">
+                {% for color, percentage in colors %}
+                <div class="color-block" style="background-color: rgb({{ color[0] }}, {{ color[1] }}, {{ color[2] }});">
+                    <span class="color-label">rgb({{ color[0] }}, {{ color[1] }}, {{ color[2] }})<br>{{ percentage|round(2) }}%</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
