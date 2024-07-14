@@ -119,3 +119,6 @@ The application will display the extracted colors in blocks, each showing the RG
 4. Commit your changes (`git commit -am 'Add new feature'`).
 5. Push to the branch (`git push origin feature-branch`).
 6. Create a new Pull Request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
