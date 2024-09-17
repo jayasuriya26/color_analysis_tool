@@ -96,7 +96,8 @@ color_analysis_tool/
 
 The application will display the extracted colors in blocks, each showing the RGB value and the percentage of that color in the uploaded image.
 
-![Example Output](https://i.imgur.com/Qu6uHcK.png)
+![Example Output]![image](https://github.com/user-attachments/assets/de49c7b3-7967-4e03-9878-cdb1d9517557)
+
 
 ## Troubleshooting
 
